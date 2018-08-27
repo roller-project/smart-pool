@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="601" height="326" viewBox="0 0 601 326">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#8DD48D"/>
+            <stop offset="100%" stop-color="#53B7D0"/>
+        </linearGradient>
+        <filter id="b" width="119.5%" height="137.2%" x="-9.6%" y="-13.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.802853954 0 0 0 0 0.802853954 0 0 0 0 0.802853954 0 0 0 1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="c" x1="58.42%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#22E6B8"/>
+            <stop offset="100%" stop-color="#00C1CE"/>
+        </linearGradient>
+        <linearGradient id="d" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#22E6B8"/>
+            <stop offset="100%" stop-color="#00C1CE"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M31.473 234.768c-13.658.149-20.487-6.9-20.487-21.148s7.054-21.023 21.16-20.327h110.18c11.333-.645 17.231-7.392 17.696-20.241.465-12.85-5.434-19.77-17.696-20.76H76.094c-15.248-4.673-21.806-16.259-19.672-34.759h148.237c5.197 0 19.866-7.5 20.201-28.754.224-14.17-6.51-23.89-20.2-29.162H.828c-3.655-17.262 4.78-28.142 25.304-32.64h123.632C151.23 9.161 161.743.254 181.308.254h325.59C525.167 2.1 534.3 13.378 534.3 34.09c0 .284 11.958.284 35.873 0C590.058 35.367 600 43.876 600 59.617c0 23.611-14.564 29.162-29.827 29.162H422.312c-19.39 0-27.262 12.2-23.617 36.6 29.51.034 44.225.034 44.144 0 26.304 0 37.862 10.526 34.674 31.576h-122.44c-16.837.656-25.256 8.595-25.256 23.816 0 15.222 8.144 23.32 24.433 24.297h172.476c4.46 19.741-2.957 29.642-22.25 29.7-19.292.059-136.441.059-351.449 0H31.473z" opacity=".1"/>
+        <g stroke="#1DC7BF" stroke-linecap="square">
+            <path d="M256.915 26.009h23.54M253.783 11.43h23.54M281.969 17.91h7.83"/>
+        </g>
+        <g stroke="#1DC7BF" stroke-linecap="square">
+            <path d="M531.344 193.505h23.54M528.213 178.927h23.54M556.398 185.406h7.83"/>
+        </g>
+        <g filter="url(#b)" transform="translate(152.477 103.927)">
+            <path fill="url(#c)" d="M29.51 174.946V13.013C29.51 5.826 35.353 0 42.56 0h278.433c7.208 0 13.051 5.826 13.051 13.013v161.933"/>
+            <path fill="#FFF" d="M39.877 174.946V19.438h283.801v155.508"/>
+            <path fill="#FFF" stroke="#52CBCA" stroke-width="2" d="M1 174.946h362.766c.364 3.5-.44 6.724-2.415 9.672-1.974 2.948-4.97 4.908-8.99 5.879H12.93c-3.854-1.225-6.814-3.185-8.88-5.879-2.068-2.694-3.084-5.918-3.05-9.672z"/>
+            <path stroke="#52CBCA" stroke-width="2" d="M153.916 174.946h57.02c0 4.283-2.383 6.875-7.146 7.775h-43.04c-4.556 0-6.834-2.591-6.834-7.775z"/>
+        </g>
+        <g stroke="url(#d)" stroke-width="2" transform="rotate(45 116.762 421.87)">
+            <ellipse cx="19.41" cy="10.343" rx="19.41" ry="10.007"/>
+            <path d="M0 10.843v7.304c0 5.527 8.69 10.008 19.41 10.008s19.41-4.48 19.41-10.008v-7.304"/>
+        </g>
+        <g stroke="url(#d)" stroke-width="2" transform="rotate(45 -2.043 722.296)">
+            <ellipse cx="13.195" cy="7.032" rx="13.195" ry="6.803"/>
+            <path d="M0 7.371v4.966c0 3.757 5.908 6.802 13.195 6.802s13.195-3.045 13.195-6.802V7.37"/>
+        </g>
+        <g stroke="url(#d)" stroke-width="2" transform="translate(29 232)">
+            <path d="M49 47v4.56C49 56.774 57.283 61 67.5 61S86 56.774 86 51.56V47M52.237 27C50.195 28.541 49 30.407 49 32.417 49 37.71 57.283 42 67.5 42S86 37.71 86 32.417"/>
+            <path d="M49 42v4.56C49 51.774 57.283 56 67.5 56S86 51.774 86 46.56V42"/>
+            <path d="M49 38v4.56C49 47.774 57.283 52 67.5 52S86 47.774 86 42.56V38"/>
+            <path d="M49 32v4.56C49 41.774 57.283 46 67.5 46S86 41.774 86 36.56V32"/>
+            <ellipse cx="72.5" cy="9.5" rx="18.5" ry="9.5"/>
+            <path d="M54 10v4.56C54 19.774 62.283 24 72.5 24S91 19.774 91 14.56V10"/>
+            <path d="M54 14v4.56C54 23.774 62.283 28 72.5 28S91 23.774 91 18.56V14"/>
+            <path d="M54 20v4.56C54 29.774 62.283 34 72.5 34S91 29.774 91 24.56V20"/>
+            <ellipse cx="18.5" cy="36.5" rx="18.5" ry="9.5"/>
+            <path d="M0 36v4.56C0 45.774 8.283 50 18.5 50S37 45.774 37 40.56V36"/>
+        </g>
+        <path stroke="#1DC7BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M35.637 295.071h563.715"/>
+        <g stroke="#979797" transform="translate(206 214)">
+            <path stroke-linecap="square" d="M3.755 20.284V62.53M14.633 27.335V62.53M26.802 35.447v26.141M40.263 44.513v17.075M53.724 44.513v17.075M92.815 27.335V62.53M103.693 27.335V62.53M115.862 35.447v26.141M80.646 35.447v26.141M168.414 27.335V62.53M254.347 18.826V62.53M156.245 35.447v26.141M67.185 38.47v23.118M129.323 44.513v17.075M142.784 44.513v17.075M180.584 35.447v26.141M237.011 24.775v36.813M207.506 36.958v24.63M220.967 30.877v30.711M194.045 44.513v17.075"/>
+            <path d="M4.512 9.578l40.876 34.196 56.572-29.456 34.533 25.56 32.156-23.21 26.569 23.21 59.695-36.116"/>
+            <circle cx="4" cy="8" r="4" fill="url(#d)"/>
+            <circle cx="45" cy="43" r="4" fill="url(#d)"/>
+            <circle cx="102" cy="13" r="4" fill="url(#d)"/>
+            <circle cx="136" cy="38" r="4" fill="url(#d)"/>
+            <circle cx="195" cy="38" r="4" fill="url(#d)"/>
+            <circle cx="255" cy="4" r="4" fill="url(#d)"/>
+            <circle cx="169" cy="13" r="4" fill="url(#d)"/>
+        </g>
+        <g fill-rule="nonzero" stroke="#FFF" stroke-width="3">
+            <path fill="#03C4CD" d="M213.13 175.087c1.012 11.768 7.752 21.917 17.471 27.72l18.874-31.014-36.345 3.294z"/>
+            <path fill="#F8E71C" d="M249.475 136.015h-.055v34.652-34.652c-20.123.033-36.42 16.135-36.42 35.993 0 1.04.043 2.06.13 3.079l36.345-3.294v-35.778z"/>
+            <path fill="#B8E4B8" d="M230.601 202.808c5.501 3.293 11.97 5.192 18.874 5.192 9.001 0 17.242-3.218 23.602-8.55l-23.602-27.657-18.874 31.015z"/>
+            <path fill="#1CE0BB" d="M285.949 172.008c0-19.88-16.33-35.993-36.474-35.993v35.778l23.602 27.657c7.871-6.609 12.872-16.446 12.872-27.442z"/>
+        </g>
+        <path fill="#1CE0BB" d="M392.503 149.575v6.009h-98.33v-6.01z"/>
+        <path fill="#F8E71C" d="M375.299 161.594v6.01h-82.13v-6.01z"/>
+        <path fill="#03C4CD" d="M348.096 174.47v6.01h-53.923v-6.01z"/>
+        <path fill="#B8E4B8" d="M362.286 186.49v6.01h-68.113v-6.01z"/>
+        <text fill="#00CECB" font-family="PingFangSC-Regular, PingFang SC" font-size="20">
+            <tspan x="409" y="160">xxxx</tspan>
+        </text>
+        <g>
+            <path fill="#FFF" stroke="#57B6C1" stroke-width="2" d="M107.38 162.19L208.6 57.374l41.397 39.977-101.22 104.817z"/>
+            <path fill="#FFF" stroke="#57B6C1" stroke-width="2" d="M98.947 123.518l123.57-77.215 30.497 48.805-123.57 77.215z"/>
+            <path fill="url(#d)" d="M13.461 28.629h145.712v57.55H13.461z" transform="rotate(-39 217.15 -46.643)"/>
+            <g transform="rotate(-49 221.392 -73.726)">
+                <circle cx="51.428" cy="20.816" r="20.816" fill="#FFF" stroke="#00CECB"/>
+                <text fill="#00CECB" font-family="PingFangSC-Regular, PingFang SC" font-size="20">
+                    <tspan x="44.264" y="27.755">$</tspan>
+                </text>
+                <path stroke="#FFF" stroke-linecap="square" d="M78.232 24.333l24.783 4.801M.873 9.763l24.782 4.8"/>
+            </g>
+            <path stroke="#00CECB" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M506 82h-19.305c1.096-14.527-4.964-22.472-18.182-23.833-13.218-1.362-21.556 5.626-25.013 20.964-3.34-8.353-8.243-11.412-14.707-9.176-6.463 2.237-8.107 6.252-4.931 12.045h-21.817"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,97 @@
+.no-border{
+  border: none; 
+}
+
+.min-h-450{
+  min-height: 450px;
+}
+
+.min-h-40{
+  min-height: 40px !important;
+}
+
+.min-w-150{
+  min-width: 150px !important;
+}
+
+.h-40{
+  height: 40px !important;
+}
+
+.mg-top-5{
+  margin-top: 5px;
+}
+
+.mg-top-20{
+  margin-top: 20px;
+}
+
+.mg-left-5{
+  margin-left: 5px;
+}
+
+.mg-left-10{
+  margin-left: 10px;
+}
+
+.pd-top-10{
+  padding-top: 10px !important;
+}
+
+.pd-bottom-10{
+  padding-bottom: 10px !important;
+}
+
+.pd-top-5{
+  padding-top: 5px !important;
+}
+
+.pd-bottom-5{
+  padding-bottom: 5px !important;
+}
+
+.pd-left-10{
+  padding-left: 10px;
+}
+
+.normal-link{
+  color: #fff;
+}
+
+.normal-link:hover{
+  color: #fff;
+}
+
+.mg-x-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mg-bottom-5{
+  margin-bottom: 5px;
+}
+
+.w-50{
+  width: 50px;
+}
+
+.borderless td, .borderless th{
+  border: none !important;
+}
+
+.carousel .item{
+  background-position: 50% 22% !important;
+}
+
+.center-form-box{
+  max-width: 450px;
+  padding: 0px 50px 40px;
+}
+
+.buy-green{
+  color: #00b275;
+}
+
+.sell-red{
+  color: #cb2a20;
+}

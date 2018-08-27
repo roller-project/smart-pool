@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content=" head keyworkds
+  ">
+  <meta name="description" content=" head description
+  ">
+  <title>BTC Statistics - Mining Pool</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="/static/css/jquery-confirm.min.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet"/>
+  <link href="/static/css/base.css" rel="stylesheet"/>
+  <link href="/static/fonts/iconfont/iconfont.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/css/en.css?v=4c00129d291ca422f3dfd6d1d25a76e5">
+<style type="text/css">
+@media (min-width: 768px){.f_mainContent{padding:0;}}
+</style>
+</head>
+
+<body coin="BTC"  lang="en_US" tz-offset="8.0">
+<div class="page_pool page_poolStatistic">
+<header>
+  <nav class="via-navbar navbar f_hd navbar-fixed-top navbar_withSubNav">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-brand" href="/">
+          <img alt="Roller" src="/static/img/logo_down.png?v=" class="hd_logo"/>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown navDropDown navItem_current">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BTC Pool <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/pool/btc/state/">BTC Pool</a></li>
+              <li><a href="/pool/bch/state/">BCH Pool</a></li>
+              <li><a href="/pool/ltc/state/">LTC Pool</a></li>
+              <li><a href="/pool/eth/state/">ETH Pool</a></li>
+              <li><a href="/pool/etc/state/">ETC Pool</a></li>
+              <li><a href="/pool/zec/state/">ZEC Pool</a></li>
+              <li><a href="/pool/dash/state/">DASH Pool</a></li>
+              <li><a href="/pool/btm/state/">BTM Pool</a></li>
+            </ul>
+          </li>
+          <li >
+          <a href="/contract/">Contract</a>
+          </li>
+          <li >
+          <a href="/wallet/home/">Wallet</a>
+          </li>
+          <li >
+          <a href="/tools/index/">Tool</a>
+          </li>
+          <li class="split-line">
+            <a style="padding: 0 0;" href="javascript:void(0);">︳</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.viabtc.com?lang=en_US">Explorer</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.coinex.com/?lang=en_US">Exchange</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="" href="/signin/">Sign in</a>
+          </li>
+          <li>
+            <a class="" href="/signup/">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="f_bd f_bd_navOpen container">
+
+
+  <!-- div in sub_nav.html -->
+
+<div class="f_mainContent">
+  <div class="mainContentBox">
+    <div class="statisticDataRow row">
+      <div class="col-md-6">
+        <div class="mod_statisticData">
+          <div class="dataItem">
+            <p class="value">139324</p>
+            <p class="title">Total Coins</p>
+          </div>
+          <div class="dataItem">
+            <p class="value">10185</p>
+            <p class="title">Total Blocks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mod_statisticData">
+          <div class="dataItem">
+            <p class="value">4</p>
+            <p class="title">Total Orphaned</p>
+          </div>
+          <div class="dataItem">
+            <p class="value">0.02%</p>
+            <p class="title">Orphan Rate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mod_statisticData">
+      <div class="dataItem">
+        <p class="value">103.25%</p>
+        <p class="title">3-Day Luck</p>
+      </div>
+      <div class="dataItem">
+        <p class="value">96.2%</p>
+        <p class="title">7-Day Luck</p>
+      </div>
+      <div class="dataItem">
+        <p class="value">100%</p>
+        <p class="title">30-Day Luck</p>
+      </div>
+      <div class="dataItem">
+        <p class="value">100.1%</p>
+        <p class="title">Total Luck</p>
+      </div>
+    </div>
+
+    <div class="contentMod mod_luckyChart">
+      <div class="modHd">3 Days Hashrate Chart</div>
+      <div class="modBd">
+        <div class="luckyChart">
+          <div id="3days-hashrate-chart" data-coin='btc' class="highChartContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentMod mod_luckyChart" style="margin-top: 10px;">
+      <div class="modHd">Daily Luck Chart</div>
+      <div class="modBd">
+        <div class="luckyChart">
+          <div id="luck-chart" data-coin='btc' class="highChartContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mod_blockRecords">
+      <div class="modHd">Block Records</div>
+      <table class="m_table">
+        <tr>
+          <th>Time</th>
+          <th>Block Height</th>
+          <th>Reward</th>
+          <th>Status</th>
+          <th>Running</th>
+          <th>Luck</th>
+        </tr>
+
+        <tr >
+          <td>2018-08-26 07:31:31</td>
+          <td>
+<a href="https://btc.com/00000000000000000004bcc6f8903d7604b62fa786c97f99c7cd5cc628c63e81" target="_blank">
+  <span class="block-hash">538453</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.56127694            </span>
+          </td>
+          <td>4/100</td>
+          <td>5m 11s</td>
+          <td>2114.37%</td>
+        </tr>
+        <tr >
+          <td>2018-08-26 07:26:20</td>
+          <td>
+<a href="https://btc.com/0000000000000000001b9801dc2242bed94c3bd847684aec16d241ab71e0cded" target="_blank">
+  <span class="block-hash">538452</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.74655047            </span>
+          </td>
+          <td>5/100</td>
+          <td>3h 48m 33s</td>
+          <td>41.37%</td>
+        </tr>
+        <tr >
+          <td>2018-08-26 03:37:47</td>
+          <td>
+<a href="https://btc.com/00000000000000000009d88b6b4d5404a6153a45567f90e8856d00d30193412c" target="_blank">
+  <span class="block-hash">538432</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.55920133            </span>
+          </td>
+          <td>25/100</td>
+          <td>34m 55s</td>
+          <td>278.04%</td>
+        </tr>
+        <tr >
+          <td>2018-08-26 03:02:52</td>
+          <td>
+<a href="https://btc.com/00000000000000000015a09ba509e835d670a796d1d515f4198da36e18bd25e0" target="_blank">
+  <span class="block-hash">538429</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.70540916            </span>
+          </td>
+          <td>28/100</td>
+          <td>4h 47m 25s</td>
+          <td>32.84%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 22:15:27</td>
+          <td>
+<a href="https://btc.com/000000000000000000226abf84d663dbdcbc4dcc61b67ec5c61c557c107e9607" target="_blank">
+  <span class="block-hash">538407</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.55462722            </span>
+          </td>
+          <td>50/100</td>
+          <td>6h 10m 8s</td>
+          <td>26.1%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 16:05:19</td>
+          <td>
+<a href="https://btc.com/00000000000000000020afd745a524e066254f8ec0a64d281fbcdf427c9210b4" target="_blank">
+  <span class="block-hash">538370</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.54005287            </span>
+          </td>
+          <td>87/100</td>
+          <td>1h 41s</td>
+          <td>157.63%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 15:04:38</td>
+          <td>
+<a href="https://btc.com/0000000000000000000165e18597c88582644655bf678ac1c590c482a80b7c1a" target="_blank">
+  <span class="block-hash">538363</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.76513302            </span>
+          </td>
+          <td>94/100</td>
+          <td>1h 5m 17s</td>
+          <td>142.71%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 13:59:21</td>
+          <td>
+<a href="https://btc.com/00000000000000000006ad16185e3d2e789f44e55538ae52c3e7ec1cf6292a49" target="_blank">
+  <span class="block-hash">538357</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.54131368            </span>
+          </td>
+          <td>100/100</td>
+          <td>33m 8s</td>
+          <td>277.53%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 13:26:13</td>
+          <td>
+<a href="https://btc.com/0000000000000000001d86bf7d8255966d28fe790c88a41918ad616d07150c2f" target="_blank">
+  <span class="block-hash">538351</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.57713655            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 2m 50s</td>
+          <td>74.95%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 11:23:23</td>
+          <td>
+<a href="https://btc.com/0000000000000000000105fc2fbf75b217e5e81e2ef15918d54961c98c2addaa" target="_blank">
+  <span class="block-hash">538341</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.59634883            </span>
+          </td>
+          <td>100/100</td>
+          <td>8m 47s</td>
+          <td>1143.36%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 11:14:36</td>
+          <td>
+<a href="https://btc.com/00000000000000000008184e120b6880e40762e1c2628fde2a77f73e9bcf5523" target="_blank">
+  <span class="block-hash">538340</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.75605144            </span>
+          </td>
+          <td>100/100</td>
+          <td>28m 22s</td>
+          <td>329.86%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 10:46:14</td>
+          <td>
+<a href="https://btc.com/0000000000000000001e72d59107118ff06b01e0dc950ed49749c31d180b101e" target="_blank">
+  <span class="block-hash">538338</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.62451324            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 25m 31s</td>
+          <td>64.34%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 08:20:43</td>
+          <td>
+<a href="https://btc.com/0000000000000000001a8e82dd7943d392022779f39ffa9e6934fa8130433b7b" target="_blank">
+  <span class="block-hash">538325</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.60959178            </span>
+          </td>
+          <td>100/100</td>
+          <td>57m 45s</td>
+          <td>167.07%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 07:22:58</td>
+          <td>
+<a href="https://btc.com/0000000000000000001605709c4166ce8bc7cf5d809b55212057775d86bdf00a" target="_blank">
+  <span class="block-hash">538320</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.63275516            </span>
+          </td>
+          <td>100/100</td>
+          <td>19m 20s</td>
+          <td>517.39%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 07:03:38</td>
+          <td>
+<a href="https://btc.com/00000000000000000010a793d9123cb557a7896937b8805d829447f312f4611a" target="_blank">
+  <span class="block-hash">538316</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.57337704            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 3m 52s</td>
+          <td>151.37%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 05:59:46</td>
+          <td>
+<a href="https://btc.com/000000000000000000086a78afdf7e362e0c26c30e317755616d46b71cb511ed" target="_blank">
+  <span class="block-hash">538309</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.52139636            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 31s</td>
+          <td>80.31%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 03:59:15</td>
+          <td>
+<a href="https://btc.com/00000000000000000027acddde082c2d55b950ad942258f7bdf488f785cfdc8a" target="_blank">
+  <span class="block-hash">538292</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.67483136            </span>
+          </td>
+          <td>100/100</td>
+          <td>32m 32s</td>
+          <td>300.57%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 03:26:43</td>
+          <td>
+<a href="https://btc.com/00000000000000000017e04cf12e68f4538a3e42aec58d9021d0b1e89d4e9caf" target="_blank">
+  <span class="block-hash">538290</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.66985492            </span>
+          </td>
+          <td>100/100</td>
+          <td>43m 7s</td>
+          <td>225.44%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 02:43:36</td>
+          <td>
+<a href="https://btc.com/0000000000000000001f5188b405e570197a38d65d5efc4c97f1efb3f037230b" target="_blank">
+  <span class="block-hash">538285</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.56692574            </span>
+          </td>
+          <td>100/100</td>
+          <td>4m 41s</td>
+          <td>2373.78%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 02:38:55</td>
+          <td>
+<a href="https://btc.com/0000000000000000002698b3acd5370c73451a5c89ebc8ab20734f04ae7cb5c6" target="_blank">
+  <span class="block-hash">538284</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.74241104            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 11m 8s</td>
+          <td>134.95%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 01:27:47</td>
+          <td>
+<a href="https://btc.com/0000000000000000000c08625e54b947c3767f20df97382de2fcf69c52e59971" target="_blank">
+  <span class="block-hash">538274</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.77261546            </span>
+          </td>
+          <td>100/100</td>
+          <td>37m 5s</td>
+          <td>257.49%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 00:50:42</td>
+          <td>
+<a href="https://btc.com/00000000000000000004f11858464cc6113248537a01e628324968b499848a60" target="_blank">
+  <span class="block-hash">538272</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.55060671            </span>
+          </td>
+          <td>100/100</td>
+          <td>47m 57s</td>
+          <td>198.23%</td>
+        </tr>
+        <tr >
+          <td>2018-08-25 00:02:45</td>
+          <td>
+<a href="https://btc.com/0000000000000000000adff6203bdbf10ac576869b732983bd35cdda318beb0e" target="_blank">
+  <span class="block-hash">538264</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.59936609            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 25m 50s</td>
+          <td>105.23%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 22:36:55</td>
+          <td>
+<a href="https://btc.com/000000000000000000108149ecb9fded5264134ae652d8da2cff0e20f72db093" target="_blank">
+  <span class="block-hash">538257</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.81467808            </span>
+          </td>
+          <td>100/100</td>
+          <td>42m 16s</td>
+          <td>212.86%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 21:54:39</td>
+          <td>
+<a href="https://btc.com/000000000000000000276a4d7432883b5bc5acce5cb2f752ab93691195d6318c" target="_blank">
+  <span class="block-hash">538254</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.67987242            </span>
+          </td>
+          <td>100/100</td>
+          <td>4m 16s</td>
+          <td>2555.29%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 21:50:23</td>
+          <td>
+<a href="https://btc.com/000000000000000000212b09f2c1eff954df392f84448e518d6ed783c5f3df4e" target="_blank">
+  <span class="block-hash">538253</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.90689268            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 28m 47s</td>
+          <td>59.7%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 19:21:36</td>
+          <td>
+<a href="https://btc.com/0000000000000000000430f18aa5aa8002912eebc8524903e07e3a794ec23238" target="_blank">
+  <span class="block-hash">538239</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.85168024            </span>
+          </td>
+          <td>100/100</td>
+          <td>27m 38s</td>
+          <td>332.1%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 18:53:58</td>
+          <td>
+<a href="https://btc.com/0000000000000000000ac71c598b5e2f4db55448fecfd36cfb9d723309611211" target="_blank">
+  <span class="block-hash">538237</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.79467711            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 10m 22s</td>
+          <td>69.22%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 16:43:36</td>
+          <td>
+<a href="https://btc.com/00000000000000000015b6d575814bfdfc075671eee67d0706daa08908c666d4" target="_blank">
+  <span class="block-hash">538228</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.61145076            </span>
+          </td>
+          <td>100/100</td>
+          <td>3h 41m 0s</td>
+          <td>39.99%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 13:02:36</td>
+          <td>
+<a href="https://btc.com/000000000000000000284d7cf4701a45e36d36f66abe4f761cc8c1d03ae524d0" target="_blank">
+  <span class="block-hash">538202</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.58166723            </span>
+          </td>
+          <td>100/100</td>
+          <td>50m 52s</td>
+          <td>177.47%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 12:11:44</td>
+          <td>
+<a href="https://btc.com/0000000000000000002aef575cc0df06ad0994426fcaba3f564f696cd5c732d3" target="_blank">
+  <span class="block-hash">538196</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.54987024            </span>
+          </td>
+          <td>100/100</td>
+          <td>5h 28m 21s</td>
+          <td>26.62%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 06:43:23</td>
+          <td>
+<a href="https://btc.com/0000000000000000000183e123b3bb5ed73a6f2a42d6de52ddc7fad66f9f33c2" target="_blank">
+  <span class="block-hash">538168</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.54174034            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 17m 13s</td>
+          <td>65.46%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 04:26:10</td>
+          <td>
+<a href="https://btc.com/00000000000000000008b92c486644b37169690e03f3a35dc2e005d77ce62038" target="_blank">
+  <span class="block-hash">538157</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.58566702            </span>
+          </td>
+          <td>100/100</td>
+          <td>34m 54s</td>
+          <td>262.52%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 03:51:16</td>
+          <td>
+<a href="https://btc.com/0000000000000000001df6bf0a5351849cf2017bd24111e53ca1839d65dc30ba" target="_blank">
+  <span class="block-hash">538153</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.6200816            </span>
+          </td>
+          <td>100/100</td>
+          <td>14m 29s</td>
+          <td>655.37%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 03:36:47</td>
+          <td>
+<a href="https://btc.com/00000000000000000019c9fe6b309f6cfd2c95676ed8c448a99d1f63b5a474b8" target="_blank">
+  <span class="block-hash">538152</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.70738917            </span>
+          </td>
+          <td>100/100</td>
+          <td>46m 57s</td>
+          <td>192.4%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 02:49:50</td>
+          <td>
+<a href="https://btc.com/0000000000000000001414600c78dc753849b12694daf8ba26a13b4d7aac246a" target="_blank">
+  <span class="block-hash">538145</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.63816034            </span>
+          </td>
+          <td>100/100</td>
+          <td>8m 57s</td>
+          <td>970.23%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 02:40:53</td>
+          <td>
+<a href="https://btc.com/00000000000000000018ebe08137a998a2f42d8c72d937d215cf5622e3dedf33" target="_blank">
+  <span class="block-hash">538144</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.52578562            </span>
+          </td>
+          <td>100/100</td>
+          <td>18m 55s</td>
+          <td>498.09%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 02:21:58</td>
+          <td>
+<a href="https://btc.com/000000000000000000010bf72afda9329110724368f2fecb34890b6e65582785" target="_blank">
+  <span class="block-hash">538140</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.66527529            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 15m 55s</td>
+          <td>66.31%</td>
+        </tr>
+        <tr >
+          <td>2018-08-24 00:06:03</td>
+          <td>
+<a href="https://btc.com/0000000000000000001278ed96f02e001bf1df74cf181ec31f2ecda59c9bccfc" target="_blank">
+  <span class="block-hash">538124</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.85163571            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 49m 12s</td>
+          <td>53.74%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 21:16:51</td>
+          <td>
+<a href="https://btc.com/00000000000000000025e9fbc06d927eeb11ac22e053b2c33d25096456bb83ad" target="_blank">
+  <span class="block-hash">538112</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.83735998            </span>
+          </td>
+          <td>100/100</td>
+          <td>2h 43m 15s</td>
+          <td>57.32%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 18:33:36</td>
+          <td>
+<a href="https://btc.com/00000000000000000005215f318e18476da7f7e879384bf77ed140b293ded9d5" target="_blank">
+  <span class="block-hash">538089</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.59135801            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 18m 39s</td>
+          <td>121.47%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 17:14:57</td>
+          <td>
+<a href="https://btc.com/000000000000000000157d2ce47d5f546b05a5fb10c20d251ea0e6d8031fe82d" target="_blank">
+  <span class="block-hash">538079</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.60864514            </span>
+          </td>
+          <td>100/100</td>
+          <td>50m 33s</td>
+          <td>190.47%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 16:24:24</td>
+          <td>
+<a href="https://btc.com/000000000000000000281f3a8d9c01e36abb43b6782eb465c2d748463b8ce5b1" target="_blank">
+  <span class="block-hash">538073</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.56944123            </span>
+          </td>
+          <td>100/100</td>
+          <td>47m 6s</td>
+          <td>199.21%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 15:37:18</td>
+          <td>
+<a href="https://btc.com/000000000000000000015ba0c555587d0e6125333285b60790af985ab2d5563f" target="_blank">
+  <span class="block-hash">538063</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.68829322            </span>
+          </td>
+          <td>100/100</td>
+          <td>5h 50m 33s</td>
+          <td>25.44%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 09:46:45</td>
+          <td>
+<a href="https://btc.com/0000000000000000001a45d6ae36118416a332e1a4e29e98f2387b3500c8de8a" target="_blank">
+  <span class="block-hash">538040</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.63578577            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 33m 7s</td>
+          <td>94.83%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 08:13:38</td>
+          <td>
+<a href="https://btc.com/00000000000000000026509a0419fa0d850d17c2495b7b6def408b77c04840f4" target="_blank">
+  <span class="block-hash">538028</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.59809586            </span>
+          </td>
+          <td>100/100</td>
+          <td>33m 44s</td>
+          <td>266.09%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 07:39:54</td>
+          <td>
+<a href="https://btc.com/00000000000000000002b5be0e9bdca388f297c92ccd2ffb8ea83e7342ad9450" target="_blank">
+  <span class="block-hash">538024</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.51440114            </span>
+          </td>
+          <td>100/100</td>
+          <td>8m 27s</td>
+          <td>1033.49%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 07:31:27</td>
+          <td>
+<a href="https://btc.com/000000000000000000268e50020cc3be85d8149e11cf4c3b3ae9e003f20dafd5" target="_blank">
+  <span class="block-hash">538022</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.56361938            </span>
+          </td>
+          <td>100/100</td>
+          <td>12m 28s</td>
+          <td>759.72%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 07:18:59</td>
+          <td>
+<a href="https://btc.com/0000000000000000002a9bb67d2bcd9d678a357e2d8db6f8c32be41cc7ca60ee" target="_blank">
+  <span class="block-hash">538018</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.521701            </span>
+          </td>
+          <td>100/100</td>
+          <td>1h 6m 2s</td>
+          <td>138.85%</td>
+        </tr>
+        <tr >
+          <td>2018-08-23 06:12:57</td>
+          <td>
+<a href="https://btc.com/00000000000000000005300e248704ba6497c1be9b7fbe2e70f4acab6bfe80fb" target="_blank">
+  <span class="block-hash">538012</span>
+</a>
+          </td>
+          <td>
+            <span >
+12.77575968            </span>
+          </td>
+          <td>100/100</td>
+          <td>25m 37s</td>
+          <td>368.44%</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="m_page2">
+      <a href="/pool/btc/state/?page=2" class="btn btnNext">Next Page</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div id="propose-download-app">
+  <div class="close-button"><img src="/static/img/iconSvg/close.svg?v="></div>
+  <div class="download-tip">
+    <h3><img src="/static/img/iconSvg/i_avatar_viabtc.svg?v=">Download ViaBTC Pool APP</h3>
+  </div>
+</div>
+<button id="open-in-app">Open in APP</button>
+
+<div class="refer-float">
+  <a href="/announcement/58/" class="bannerItemLink">
+    <img src="/static/img/ac/ref_cet_en.png?v=">
+  </a>
+</div>
+<div class="f_ft">
+  <div class="container">
+    <div class="row ftContent">
+      <div class="linksBox col-md-7">
+        <div class="row">
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Product</dt>
+            <dd>
+              <a href="/pool/BTC/home/">Pool</a>
+            </dd>
+            <dd>
+              <a href="/contract/">Contract</a>
+            </dd>
+            <dd>
+              <a href="/wallet/home/">Wallet</a>
+            </dd>
+          </dl>
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Company</dt>
+            <dd>
+              <a target="_blank" href="https://www.viabtc.com/aboutus?lang=en_US">About us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://www.lagou.com/gongsi/276586.html">Join us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://www.viabtc.com/contact?lang=en_US">Contact us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/help/pricing/">Fees</a>
+            </dd>
+          </dl>
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Help</dt>
+            <dd>
+              <a target="_blank" href="https://support.viabtc.com/hc/en-us/sections/360000713211">Mining Settings</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://support.viabtc.com/hc/en-us/sections/360000907891">FAQ</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/ticket/new/">Ticket</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/announcements/">Announcement</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="mediaBox col-md-5">
+        <img src="/static/img/ft_logo.png?v=" class="ft_logo" alt="ViaBTC Logo" />
+        <div class="mediaIcons">
+          <a target="_blank" href="https://twitter.com/viabtc" class="i_twitter">Twitter</a>
+          <a target="_blank" href="https://www.facebook.com/viabtc" class="i_facebook">Facebook</a>
+          <a target="_blank" href="http://weibo.com/viabtc" class="i_weibo">Weibo</a>
+					<span class="iconBox">
+						<a class="i_wechat"></a>
+						<span class="qrcode"><img src="/static/img/page/help/qrcode_weixin.png?v="></span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="ft_btm row">
+      <p class="col-sm-8">
+        &copy; 2018 ViaBTC Technology Limited All rights reserved
+        | <a href="/terms/">Service Terms</a>
+      </p>
+      <p class="col-sm-4 cpRight">
+        <div class="dropdown dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            English
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="/lang/?lang=en_US">English</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=zh_Hans_CN">简体中文</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=zh_Hant_HK">繁體中文</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ja_JP">日本語</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ko_KR">한국어</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ru_RU">русский</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+    </div>
+  </div>
+<script src="/static/js/jquery-3.1.1.min.js?v=e071abda8fe61194711cfc2ab99fe104"></script>
+<script src="/static/js/bootstrap.min.js?v=281cd50dd9f58c5550620fc148a7bc39"></script>
+<script src="/static/js/jquery-confirm.min.js?v=521b4b28c14bd46781bf3767baa0b552"></script>
+<script src="/static/js/global.js?v=d5f2d9305392b0ed1c3332f4597bc922"></script>
+<script src="/static/js/base.js?v=f023d475914d52546f7c117a92f99a8f"></script>
+<script type="text/javascript">
+        var csrf_token = "IjU3NjQ5ZjdjYjc5MWVjODQwNjI4MmViOGNhNjg4Zjk0YmRhMzEzYjMi.DmOCyQ.3EVkdJDeLj137t0eVYLPpwirTAo";
+        $.ajaxSetup({
+          beforeSend: function(xhr, settings) {
+            if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
+              xhr.setRequestHeader("X-CSRFToken", csrf_token);
+            }
+          }
+        });
+
+
+
+
+
+</script>
+<script type="text/javascript">
+        if(window.top != window && document.referrer){
+          var a = document.createElement("a");
+          a.href = document.referrer;
+          var host = a.hostname;
+
+          var endsWith = function(str, suffix) {
+            return str.indexOf(suffix, str.length - suffix.length) !== -1;
+          }
+
+          if(!endsWith(host, '.viabtc.com')){
+            top.location.href = "https://pool.viabtc.com";
+          }
+        }
+
+
+
+
+
+</script>
+<script src="/static/js/highcharts.js?v=766ffe08e0337a21f44d58a9f89af556"></script>
+<script src="/static/js/state.js?v=156b688102d142010ecfb058393bdb64"></script>
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74680231-5', 'auto');
+        ga('send', 'pageview');
+
+
+</script>
+</div>
+</body>
+</html>

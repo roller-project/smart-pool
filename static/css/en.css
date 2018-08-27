@@ -1,0 +1,109 @@
+.f_hd .accountDropDown{
+    min-width:200px
+}
+.page_index .mod_indexBanner .carousel-caption{
+    letter-spacing:0
+}
+.page_helpCenter .modInnerBanner .modTitle{
+    letter-spacing:0;
+    padding-left:0
+}
+.page_cloudMiningIntro .mod_banner .carousel-caption .bannerTitle{
+    letter-spacing:0;
+    padding-left:0
+}
+.page_account .mod_transactionHistory .modHd .dropdown-toggle{
+    width:160px
+}
+.page_aboutUs .mod_banner .bannerTitle{
+    letter-spacing:0;
+    margin:0
+}
+.page_aboutUs .mod_aboutContent .course .sectionContent{
+    width:800px
+}
+.page_poolHome .floatAd_bmw{
+    background:url(../img/ac/ac_bmwFloatAd_en.png);
+    background-size:cover
+}
+.page_countingDown .mod_banner .pageTitle{
+    letter-spacing:0;
+    padding-left:0
+}
+.page_bmw .mod_banner{
+    background:url(../img/ac/ac_bmwAcBanner_en.jpg) 50% 50% no-repeat
+}
+.page_bmw .mod_leaderBoard .modTitle{
+    background:url(../img/ac/ac_bmwLeaderBoard_en.png) 50% 50% no-repeat
+}
+.page_bmw .mod_prize .modTitle{
+    background:url(../img/ac/ac_bmwPrizeTitle_en.png) 50% 50% no-repeat
+}
+.page_bmw .mod_contact{
+    padding-bottom:40px
+}
+.page_accountWallet .mod_balance .operations .btn{
+    width:150px
+}
+.page_accountWallet .balance_box .center .mod .auto{
+    margin-left:5px
+}
+.page_accountWallet .balance_box .right .mod{
+    text-align:left;
+    white-space:nowrap;
+    padding:0
+}
+.page_accountWallet .balance_box .right .mod .btn2{
+    width:120px;
+    padding:0px !important;
+    text-align:center
+}
+@media (max-width: 1199px){
+    .page_accountWallet .balance_box .right .mod .btn2{
+        width:45%
+    }
+}
+.page_accountWallet .balance_box .right .mod .record{
+    margin:0 45px 0 5px
+}
+.page_winterfeast .part1{
+    background-image:url("../img/ac/winterfeast/part1_en.jpg?v=2")
+}
+.page_winterfeast .part2{
+    background-image:url("../img/ac/winterfeast/part2_en.jpg?v=2")
+}
+.page_winterfeast .part3{
+    background-image:url("../img/ac/winterfeast/part3_en.jpg?v=2")
+}
+.page_winterfeast .part4_body .title{
+    font-size:30px
+}
+.page_winterfeast .part4_body .title,.page_winterfeast .part4_body .text1{
+    padding-bottom:10px
+}
+.popup_winterfeast{
+    background-image:url("../img/ac/winterfeast/popup_en.png?v=2")
+}
+.page_appDownload .banner{
+    background-image:url("../img/ac/appDownload/banner_en.jpg")
+}
+.page_helpCenter.page_helpCenter_contact.contact .tabBody .tab-pane{
+    padding-top:82px
+}
+.page_helpCenter.page_helpCenter_contact.contact .contact{
+    padding-bottom:50px
+}
+.page_helpCenter.page_helpCenter_contact.contact .contact .channels td{
+    font-size:20px
+}
+@media (max-width: 480px){
+    .page_helpCenter.page_helpCenter_contact.contact .tabBody .tab-pane{
+        padding-top:40px
+    }
+    .page_helpCenter.page_helpCenter_contact.contact .contact{
+        padding-bottom:20px
+    }
+    .page_helpCenter.page_helpCenter_contact.contact .contact .channels td{
+        font-size:14px
+    }
+}
