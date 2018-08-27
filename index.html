@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content=" head keyworkds
+  ">
+  <meta name="description" content=" head description
+  ">
+  <title>Ethereum Mining</title>
+  <link rel="icon" href="/static/img/favicon.jpg?v=" type="image/x-icon"/>
+  <link href="/static/css/font-awesome.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet"/>
+  <link href="/static/css/base.css" rel="stylesheet"/>
+  <link href="/static/fonts/iconfont/iconfont.css" rel="stylesheet"/>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.min.js?v=3044234175ac91f49b03ff999c592b85"></script>
+  <script src="/static/js/respond.min.js?v=afc1984a3d17110449dc90cf22de0c27"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/static/css/en.css">
+<style type="text/css">
+body{background-color:#fff;}
+.fa-chevron-left .fa-chevron-right{
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+</style>
+</head>
+
+<body  lang="en_US" tz-offset="8.0">
+
+<div class="page_index">
+<header>
+  <nav class="via-navbar navbar f_hd navbar-fixed-top navbar_transparent">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+           aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-brand" href="/">
+          <img alt="Roller" src="/static/img/logo.png?v=" class="hd_logo"/>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown navDropDown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pool <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/pool/btc/state/">BTC Pool</a></li>
+              <li><a href="/pool/bch/state/">BCH Pool</a></li>
+              <li><a href="/pool/ltc/state/">LTC Pool</a></li>
+              <li><a href="/pool/eth/state/">ETH Pool</a></li>
+              <li><a href="/pool/etc/state/">ETC Pool</a></li>
+              <li><a href="/pool/zec/state/">ZEC Pool</a></li>
+              <li><a href="/pool/dash/state/">DASH Pool</a></li>
+              <li><a href="/pool/btm/state/">BTM Pool</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/contract/">Contract</a>
+          </li>
+          <li>
+            <a href="/wallet/home/">Wallet</a>
+          </li>
+          <li>
+            <a href="/tools/index/">Tool</a>
+          </li>
+          <li class="split-line">
+            <a style="padding: 0 0;" href="javascript:void(0);">︳</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.viabtc.com?lang=en_US">Explorer</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.coinex.com/?lang=en_US">Exchange</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="" href="/signin/">Sign in</a>
+          </li>
+          <li>
+            <a class="" href="/signup/">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="mod_indexBanner container-fluid">
+  <div id="indexBannerCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+    <ol class="carousel-indicators">
+      <li data-target="#indexBannerCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#indexBannerCarousel" data-slide-to="1"></li>
+      <li data-target="#indexBannerCarousel" data-slide-to="2"></li>
+      <li data-target="#indexBannerCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background: #000 url(/static/img/viabtcBanner.jpg?v=) 50% 50% no-repeat; background-size: auto 100%;">
+        <div class="carousel-caption hidden-xs">ROLLER PLATFORM<br> Making World A Better Place</div>
+      </div>
+      <div class="item" style="background:#1B72E3 url(/static/img/ac/ac_btm_en.jpg?v=) 50% 50% no-repeat; background-size: auto 100%;">
+        <a href="/announcement/58/" class="bannerItemLink"></a>
+      </div>
+      <div class="item" style="background:#0b193d url(/static/img/ac/ac_cet_en_1.jpg?v=) 50% 50% no-repeat; background-size: auto 100%;">
+        <a href="/announcement/63/" class="bannerItemLink"></a>
+      </div>
+      <div class="item" style="background:#ce89ea url(/static/img/ac/ac_app_online_en.png?v=) 50% 50% no-repeat; background-size: auto 100%;">
+        <a href="/activity/app/" class="bannerItemLink"></a>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#indexBannerCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#indexBannerCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="data-body-container">
+  <!--<div class="bulletinBox">
+    <div class="f_wrapper">
+      <a href="/announcement/64/" class="bulletinLink">
+        <p class="bulletin"><span class="i_notiIcon"></span>Refund arrangement: August 7th batch of L3 Pre-sale contracts </p>
+      </a>
+      <a href="/announcements/" class="moreLink">More<i aria-hidden="true" class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>-->
+  <div class="mod_poolData">
+    <div class="container">
+      <ul class="poolList">
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/btc/home/">
+            <img src="/static/img/iconSvg/pool_btc.svg?v=">
+            <p>BTC Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">5.104E</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">49.634E</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">424824</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/BTC/state/">10181</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(BTC)</p>
+            <p class="value">139274</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">6716.96</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/bch/home/">
+            <img src="/static/img/iconSvg/pool_bch.svg?v=">
+            <p>BCH Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">515.576P</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">4.009E</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">88120</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/BCC/state/">13012</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(BCH)</p>
+            <p class="value">162836</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">533.09</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/ltc/home/">
+            <img src="/static/img/iconSvg/pool_ltc.svg?v=">
+            <p>LTC Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">37.755T</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">254.278T</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">70825</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/LTC/state/">23800</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(LTC)</p>
+            <p class="value">597876</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">58.05</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/eth/home/">
+            <img src="/static/img/iconSvg/pool_eth.svg?v=">
+            <p>ETH Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">695.920G</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">222.392T</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">4272</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/ETH/state/">3506</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(ETH)</p>
+            <p class="value">10396</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">279.5</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/etc/home/">
+            <img src="/static/img/iconSvg/pool_etc.svg?v=">
+            <p>ETC Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">13.688G</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">13.961T</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">99</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/ETC/state/">712</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(ETC)</p>
+            <p class="value">2700</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">12.53</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/zec/home/">
+            <img src="/static/img/iconSvg/pool_zec.svg?v=">
+            <p>ZEC Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">37.887M</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">794.743M</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">2600</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/ZEC/state/">1591</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(ZEC)</p>
+            <p class="value">15936</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">138.31</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/dash/home/">
+            <img src="/static/img/iconSvg/pool_dash.svg?v=">
+            <p>DASH Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">187.283T</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">1.272P</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">12512</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/DASH/state/">30473</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(DASH)</p>
+            <p class="value">53170</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">143.38</p>
+          </div>
+        </li>
+        <li class="poolItem">
+          <a class="poolName poolData" href="/pool/btm/home/">
+            <img src="/static/img/iconSvg/pool_btm.svg?v=">
+            <p>BTM Pool</p>
+          </a>
+          <div class="poolData">
+            <p class="title">Pool HashRate</p>
+            <p class="value">88.149K</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Network HashRate</p>
+            <p class="value">636.003M</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Active</p>
+            <p class="value">64</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Block Mined</p>
+            <p class="value"><a href="/pool/BTM/state/">6</a></p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Mined(BTM)</p>
+            <p class="value">2475</p>
+          </div>
+          <div class="poolData">
+            <p class="title">Coin Price(USD)</p>
+            <p class="value">0.19</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mod_feature2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 item">
+          <figure class="img-figure">
+            <img src="/static/img/iconSvg/index_safe.svg?v=" alt="">
+          </figure>
+          <p class="title">Security & Stability</p>
+          <p class="content">A professional technical team with world-class dotcom company background. Plenty of experience in development & operation of distributed, high-concurrency and high-availability services. 99.999% uptime secured since launch.</p>
+        </div>
+        <div class="col-md-4 item">
+          <figure class="img-figure">
+            <img src="/static/img/iconSvg/index_opacity.svg?v=" alt="">
+          </figure>
+          <p class="title">Transparency</p>
+          <p class="content">Real-time and detailed data monitoring on hashrates, users and miners with clear graphical demonstration. Additional reference for miners with pool data on blocks, luck, orphan rate etc.</p>
+        </div>
+        <div class="col-md-4 item">
+          <figure class="img-figure">
+            <img src="/static/img/iconSvg/index_lowfee.svg?v=" alt="">
+          </figure>
+          <p class="title">Low Fees</p>
+          <p class="content">Adoption of PPS+ and PPLNS payment methods. Transaction fees will be paid for both methods. A maintenance fee as low as necessary to guarantee pool safety and daily maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mod_feature">
+    <div class="container">
+      <ul class="featureList">
+        <li class="featureListItem clearfix">
+          <div class="featureIcoBox">
+            <img src="/static/img/iconSvg/cloud_agreement.svg?v=" alt="">
+          </div>
+          <div class="featureDescBox">
+            <div class="desc">
+              <p class="title">Cloud Mining Contract</p>
+              <p class="info"><span class="dote">·</span>Start mining cryptocurrencies with no trouble of purchase, delivery and maintenance, and free of noise.</p>
+              <p class="info"><span class="dote">·</span>Mine with the most advanced and power-efficient mining hardware - Antminer S9, L3+.</p>
+              <p class="info"><span class="dote">·</span>Innovative PPS+ payment method with allocation of 100% transaction fees to guarantee higher yield.</p>
+              <p>
+                <a href="/contract/home/" class="btn">Purchase Now</a>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="agreement-wallet container">
+    <img class="img-responsive phone-img" src="/static/img/index_agreement_bg.jpg?v=" srcset="/static/img/index_agreement_bg%402x.jpg?v= 2x" alt="app">
+    <div class="text-figure">
+      <div class="invalid-name">
+        Pool, Contract, Wallet
+        <p class="text-style-1">
+          ALL in ONE
+        </p>
+      </div>
+      <p style="margin-top: 24px;">Real-time hashrate monitoring, Mobile access to mining profits.</p>
+      <div class="code-container clearfix">
+        <img class="code" src="/static/img/index_code_appstore.jpg?v=" srcset="/static/img/index_code_appstore%402x.jpg?v= 2x" alt="">
+        <div class="channel">
+          <a target="_blank" href="https://itunes.apple.com/hk/app/viabtc%E7%9F%BF%E6%B1%A0-%E9%80%9A%E8%BF%87%E6%AF%94%E7%89%B9%E5%B8%81-%E8%AE%A9%E4%B8%96%E7%95%8C%E6%9B%B4%E7%BE%8E%E5%A5%BD/id1334584229?mt=8">
+            <img src="/static/img/iconSvg/index_appstore.svg?v=" alt="iOS">
+          </a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.viabtc.pool" class="android">
+            <img src="/static/img/iconSvg/index_androidstore.svg?v=" alt="Android">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="propose-download-app">
+    <div class="close-button"><img src="/static/img/iconSvg/close.svg?v="></div>
+    <div class="download-tip">
+      <h3><img src="/static/img/iconSvg/i_avatar_viabtc.svg?v=">Download ViaBTC Pool APP</h3>
+    </div>
+    <div class="download-button">Download</div>
+  </div>
+  <button id="open-in-app">Open in APP</button>
+  <div class="refer-float">
+    <a href="/announcement/58/" class="bannerItemLink">
+      <img src="/static/img/ac/ref_cet_en.png?v=">
+    </a>
+  </div>
+<div class="f_ft">
+  <div class="container">
+    <div class="row ftContent">
+      <div class="linksBox col-md-7">
+        <div class="row">
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Product</dt>
+            <dd>
+              <a href="/pool/BTC/home/">Pool</a>
+            </dd>
+            <dd>
+              <a href="/contract/">Contract</a>
+            </dd>
+            <dd>
+              <a href="/wallet/home/">Wallet</a>
+            </dd>
+          </dl>
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Company</dt>
+            <dd>
+              <a target="_blank" href="https://www.viabtc.com/aboutus?lang=en_US">About us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://www.lagou.com/gongsi/276586.html">Join us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://www.viabtc.com/contact?lang=en_US">Contact us</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/help/pricing/">Fees</a>
+            </dd>
+          </dl>
+          <dl class="col-sm-4 col-xs-4">
+            <dt>Help</dt>
+            <dd>
+              <a target="_blank" href="https://support.viabtc.com/hc/en-us/sections/360000713211">Mining Settings</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="https://support.viabtc.com/hc/en-us/sections/360000907891">FAQ</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/ticket/new/">Ticket</a>
+            </dd>
+            <dd>
+              <a target="_blank" href="/announcements/">Announcement</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="mediaBox col-md-5">
+        <img src="/static/img/ft_logo.png?v=" class="ft_logo" alt="Roller Pool" />
+        <div class="mediaIcons">
+          <a target="_blank" href="https://twitter.com/viabtc" class="i_twitter">Twitter</a>
+          <a target="_blank" href="https://www.facebook.com/viabtc" class="i_facebook">Facebook</a>
+          <a target="_blank" href="http://weibo.com/viabtc" class="i_weibo">Weibo</a>
+					<span class="iconBox">
+						<a class="i_wechat"></a>
+						<span class="qrcode"><img src="/static/img/page/help/qrcode_weixin.png?v="></span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="ft_btm row">
+      <p class="col-sm-8">
+        &copy; 2018 ViaBTC Technology Limited All rights reserved
+        | <a href="/terms/">Service Terms</a>
+      </p>
+      <p class="col-sm-4 cpRight">
+        <div class="dropdown dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            English
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="/lang/?lang=en_US">English</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=zh_Hans_CN">简体中文</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=zh_Hant_HK">繁體中文</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ja_JP">日本語</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ko_KR">한국어</a>
+            </li>
+            <li>
+              <a href="/lang/?lang=ru_RU">русский</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+    </div>
+  </div>
+  <script src="/static/js/jquery-3.js?v=e071abda8fe61194711cfc2ab99fe104"></script>
+  <script src="/static/js/jquery-confirm.js?v=521b4b28c14bd46781bf3767baa0b552"></script>
+  <script src="/static/js/bootstrap.js?v=281cd50dd9f58c5550620fc148a7bc39"></script>
+  <script src="/static/js/global.js?v=d5f2d9305392b0ed1c3332f4597bc922"></script>
+  <script src="/static/js/base.js?v=f023d475914d52546f7c117a92f99a8f"></script>
+  <script>
+var scroll_monitor = function() {
+  function toggle_navbar(new_top) {
+    if (new_top > 0) {
+      $('.navbar').removeClass('navbar_transparent');
+      $('.hd_logo').attr('src', '/static/img/logo_down.png?v=');
+    } else {
+      $('.navbar').addClass('navbar_transparent');
+      $('.hd_logo').attr('src', '/static/img/logo.png?v=');
+    }
+  }
+
+  if (document.body.clientWidth > 992) {
+    $(window).scroll(function() {
+      var new_top = $(window).scrollTop();
+      toggle_navbar(new_top);
+    });
+  } else {
+    toggle_navbar(1);
+  }
+} ();
+
+
+
+
+  </script>
+  <script type="text/javascript">
+if(window.top != window && document.referrer){
+  var a = document.createElement("a");
+  a.href = document.referrer;
+  var host = a.hostname;
+
+  var endsWith = function(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+  }
+
+  if(!endsWith(host, '.viabtc.com')){
+    top.location.href = "https://pool.viabtc.com";
+  }
+}
+  </script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-74680231-5', 'auto');
+ga('send', 'pageview');
+  </script>
+
+</div>
+</body>
+<script src="/static/js/highcharts.js?v="></script>
+</html>

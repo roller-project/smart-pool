@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>BTM</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="10.6788164%" y1="16.4304465%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#797979" offset="0%"></stop>
+            <stop stop-color="#2F2F2F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="钱包页面优化" transform="translate(-414.000000, -1868.000000)" fill-rule="nonzero">
+            <g id="Group-Copy-12" transform="translate(360.000000, 1840.000000)">
+                <g id="BTM" transform="translate(54.000000, 28.000000)">
+                    <path d="M40,0 C17.9086868,0 0,17.9086868 0,40 C0,62.0913132 17.9086868,80 40,80 C62.0913132,80 80,62.0913132 80,40 C80,17.9086868 62.0913132,2.69144976e-15 40,0 Z" id="Combined-Shape-Copy-2" fill="url(#linearGradient-1)"></path>
+                    <g transform="translate(20.000000, 20.000000)" fill="#FFFFFF" id="Shape">
+                        <polygon points="13.1403324 11.3542131 2.43362659 22.0609189 0 24.4939198 3.26756598 36.73087 15.5038905 39.998436 17.0335093 38.4688172 11.8884848 33.3237928 7.78697947 32.2114565 6.18791789 26.1630499 17.0335093 15.24739"></polygon>
+                        <polygon points="36.7089736 36.73087 39.9765396 24.4939198 38.4469208 22.9649267 33.302522 28.1093255 32.1895601 32.2114565 26.1411535 33.8105181 15.2261193 22.9649267 11.3323167 26.8581036 24.4726491 39.998436 36.7089736 36.73087"></polygon>
+                        <polygon points="32.1895601 7.80825024 33.7886217 13.8572825 22.9430303 24.7723167 26.8362072 28.6654936 39.9765396 15.5257869 36.7089736 3.28946237 24.4726491 0.0218963832 22.9430303 1.55151515 28.0880547 6.69591398"></polygon>
+                        <polygon points="6.67464321 11.9103812 7.78697947 7.80825024 13.8353861 6.20918866 24.7504203 17.0554057 28.6442229 13.1616031 17.9375171 2.45489736 15.5038905 0.0218963832 3.26756598 3.28946237 0 15.5257869 1.52961877 17.0554057"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
